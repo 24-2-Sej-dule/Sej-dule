@@ -10,9 +10,6 @@
 
 ### 3. **코드 스타일**
 
-- JavaScript 코드는 **ESLint**와 **Prettier**를 사용하여 포맷을 맞춘다.
-- CSS는 **BEM(Block Element Modifier)** 네이밍을 사용하며, HTML과 CSS는 일관된 스타일을 유지한다.
-- VS Code 프로그램을 사용해 코드를 작성한다.
 - **HTML, CSS, JavaScript**를 사용한다.
 - 코드를 작성할 때는 VS code 프로그램을 사용하며, 일관된 코드 스타일을 사용해 가독성을 높인다.
     - HTML: 들여쓰기 2칸 사용
