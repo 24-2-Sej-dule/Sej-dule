@@ -1,46 +1,47 @@
 # Sej-dule (셋둘)
 
-**Language**: [English](README_eng.md)
+**Language**: [English](README_KOR.md)
 
-### 1. 프로젝트 소개
+### 1. Project Overview
 
-본 프로젝트에서는 세종대학교의 강의실 별 시간표를 정리하는 웹페이지(Sej-dule:셋둘)를 개발한다. 현재 세종대학교 사이트에서는 특정 강의실의 사용 가능 시간을 쉽고 빠르게 조회할 수 있는 기능이 없다. 따라서 사용자가 강의실 정보를 확인하기 위해서는 해당 사이트에서 검색하거나, 엑셀 파일을 다운로드하여 원하는 강의실을 직접 찾아야 하는 불편함이 존재한다.
+In this project, we aim to develop a webpage called "Sej-dule" to organize and display the classroom schedules at Sejong University. Currently, the Sejong University website lacks a convenient feature for quickly checking the availability of specific classrooms. Users must search on the site or download an Excel file to manually find information about the classroom they want, which is inconvenient.
 
-Sej-dule은 이러한 불편함을 해결하기 위해, 강의실별로 수업이 진행되는 시간과 빈 시간을 직관적으로 보여주어 사용자가 손쉽게 강의실 이용 가능 여부를 파악할 수 있도록 돕는 서비스를 제공한다.
+Sej-dule addresses these issues by offering a service that shows class schedules and empty time slots by classroom in an intuitive way, making it easy for users to see classroom availability at a glance.
 
-### 2. 주요 기능
 
-- **시간대별 강의실 정보 시각화**
-    - Chart.js 라이브러리를 사용하여 시간대별 강의실 시간표를 시각적으로 표시한다. 이를 통해 사용자가 한눈에 특정 강의실의 수업 시간과 빈 시간을 확인할 수 있다.
-- **사용 가능 시간 강조 표시**
-    - 사용자가 빈 강의실을 쉽게 파악할 수 있도록, 강의가 비어 있는 시간대는 시각적으로 강조하여 표시한다. 이를 통해 강의실 사용 가능 시간을 빠르고 명확하게 확인할 수 있다.
-- **강의실 및 날짜 별 검색 기능**
-    - 원하는 날짜에 따라 강의실의 정보를 쉽게 찾을 수 있도록 강의실 및 날짜 필터 기능을 제공한다. 이를 통해 사용자는 원하는 강의실의 일정을 빠르게 확인할 수 있으며, 효율적인 시간 관리를 돕는다.
+### 2. Key Features
 
-### 3. 데이터 수집 방안
+- **Classroom Schedule Visualization by Time**
+    - Using the **Chart.js** library, Sej-dule visually displays classroom schedules by time slot, allowing users to quickly check a specific classroom’s class and empty periods at a glance.
+- **Emphasis on Available Time Slots**
+    - To help users easily identify free classrooms, **vacant times are visually highlighted**, enabling quick and clear checks of classroom availability.
+- **Search by Classroom and Date**
+    - To facilitate quick access to the classroom schedule for a specific date, Sej-dule provides **classroom and date filtering options**, allowing users to efficiently manage their time by quickly viewing the schedule of their preferred classroom.
 
-세종대학교 학사정보시스템 사이트에서 2024년도 강의 일정표를 참고하여 강의실 일정 데이터를 수집한다. 이 데이터에는 강의실 별 진행되는 수업 정보와 강의 시간대에 대한 정보가 포함되어 있다.
+### 3. Data Collection Method
 
-이를 통해 특정 강의실에서 어느 시간에 수업이 열리고, 언제 사용 가능한지 파악할 수 있으며, 학생들이 자유롭게 이용할 수 있는 강의실을 쉽게 확인할 수 있도록 지원한다.
+Classroom schedule data is gathered from the 2024 academic schedule on Sejong University's Academic Information System. This data includes classroom-specific information, detailing the classes held and their time slots.
 
-### 4. 프로젝트 기대효과
+Through this, classes can be opened at a certain time and when they are available in a specific classroom, and it supports students to easily check the classrooms they can use freely.
 
-- **강의실 정보 접근성 향상**: 사용자가 원하는 강의실의 사용 가능 시간을 쉽고 빠르게 조회할 수 있어, 불필요한 검색 과정을 줄이고 편리하게 정보를 얻을 수 있다.
-- **스트레스 해소**: 강의실을 찾기 위해 여러 단계를 거치지 않아도 되므로, 정보 검색 과정에서 발생하는 스트레스와 답답함을 줄일 수 있다.
-- **효율적인 시간 관리**: 빈 강의실을 쉽게 파악할 수 있어 학생들이 자유 시간이나 자습 시간을 효과적으로 계획할 수 있다.
-- **사용자 편의성 증대**: 복잡한 검색이나 파일 다운로드 없이도 직관적으로 강의실 정보를 확인할 수 있어, 학습 환경이 더 편리해진다.
+### 4. Expected Benefits
 
-### 5. 개발 도구
+- **Improved Access to Classroom Information**: Users can quickly and easily check the availability of their desired classroom, reducing unnecessary search steps and making information retrieval more convenient.
+- **Reduced Stress**: Fewer steps are needed to locate available classrooms, reducing the frustration and stress of searching for information.
+- **Efficient Time Management**: The ability to easily identify empty classrooms allows students to effectively plan free or self-study periods.
+- **Enhanced User Convenience**: Without complicated searches or downloads, users can intuitively check classroom information, making the academic environment more user-friendly.
 
-- 개발 언어
+### 5. Development Tools
+
+- Programming Languages
     - HTML
     - CSS
     - JavaScript
-- 라이브러리
+- Library
     - Chart.js
 
-### 6. 역할 분배
+### 6. Role Distribution
 
-- **서미경**: 프론트엔드 리드, UI/UX 지원
-- **백세진**: 프로젝트 관리 및 데이터 처리
-- **장서현**: UI/UX 리드, 프론트엔드 지원
+- Baek Sejin: Project Management and Data Processing
+- Seo Mikyung: Lead Front-end , Support UI/UX
+- Jang Seohyun: Lead UI/UX , Support Front-end
