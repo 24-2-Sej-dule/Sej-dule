@@ -1,28 +1,17 @@
-제목 : feat(issue 번호): 기능명
-  ex) feat(17): pull request template 작성
-  (확인 후 지워주세요)
+# Pull Request Template
 
-### Part
+## 제목 형식 (Title Format)
+- 형식: 'feat(#이슈번호): 기능명'  
+  Format: 'feat(#issue number): feature name'
+- 예시: 'feat(17): Add timetable visualization feature'
+  Example: 'feat(17): Add timetable visualization feature'
 
-- [x] FE
+## 작업 내용 (Work Description)
+- 구현된 기능과 변경 사항을 간단히 설명합니다.  
+  Briefly describe the implemented features and changes.
 
-### 작업 내용
-
-- 기능에서 어떤 부분이
-
-- 구현되었는지 설명해주세요
-
-### 이미지 첨부
-
-- img src="파일주소" width="50%" height="50%"
-
-### 앞으로의 과제
-
-- 내일 할 일을
-
-- 적어주세요
-
-
-### 이슈 링크
-
-- [레포 이름 #이슈번호](이슈 주소)
+## 스크린샷 (Screenshots)
+- 필요한 경우, 기능 변경 사항을 설명할 스크린샷을 첨부합니다.  
+  If necessary, attach screenshots explaining the changes made.
+```html
+<img src="파일주소" width="50%" height="50%">
