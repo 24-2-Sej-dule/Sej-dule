@@ -1,6 +1,6 @@
 # Sej-dule (셋둘)
 
-**Language**: [English](README_KOR.md)
+**Language**: [KOREAN](README_KOR.md)
 
 ### 1. Project Overview
 
