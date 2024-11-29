@@ -2,8 +2,8 @@
 
 - Use the latest web browser (e.g., Chrome, Naver Whale).
 - **Clone the project from GitHub.**
-- For detailed project descriptions, visit the https://sej-dule.readthedocs.io/en/latest/.
-- The latest version of the project can be accessed on GitHub Pages (https://24-2-sej-dule.github.io/Sej-dule/)
+- For detailed project descriptions, visit the [Sej-dule document](https://sej-dule.readthedocs.io/en/latest/)
+- The latest version of the project can be accessed on GitHub Pages [Sej-dule Website](https://24-2-sej-dule.github.io/Sej-dule/)
 
 ---
 
