@@ -2,19 +2,21 @@
 
 1. Download the Project
 
-- 1. Clone the Project from GitHub
+1. Clone the Project from GitHub
 
-  - Visit https://github.com/24-2-Sej-dule/Sej-dule?tab=coc-ov-file, then click **Code → Download ZIP**.
-  - You can also install the files using the following commands:
 
-  ```bash
-  git clone https://github.com/24-2-Sej-dule/Sej-dule.git
-  cd Sej-dule
-  ```
+    - Visit https://github.com/24-2-Sej-dule/Sej-dule?tab=coc-ov-file, then click **Code → Download ZIP**.
+    - You can also install the files using the following commands:
+    ```bash
+    git clone https://github.com/24-2-Sej-dule/Sej-dule.git
+    cd Sej-dule
+    ```
 
-- 2. Run the HTML File
-  - Open the `index.html` file in your browser.
-  - This allows you to use Sej-dule.
+2. Run the HTML File
+
+
+    - Open the `index.html` file in your browser.
+    - This allows you to use Sej-dule.
 
 2. GitHub Pages
 
@@ -31,17 +33,21 @@
 
 1. 프로젝트 다운로드
 
-- 1. GitHub에서 프로젝트 클론
-  - https://github.com/24-2-Sej-dule/Sej-dule?tab=coc-ov-file
-    에 접속하여 Code → Download ZIP을 클릭한다.
-  - 아래 명령어를 사용하여 파일을 설치할 수 있다.
-    ```bash
-    git clone https://github.com/24-2-Sej-dule/Sej-dule.git
-    cd Sej-dule
-    ```
-- 2. HTML 파일 실행
-  - `index.html` 파일을 브라우저에서 실행합니다.
-  - 이를 통해 Sej-dule(셋둘)을 이용할 수 있습니다.
+1. GitHub에서 프로젝트 클론
+
+
+    - https://github.com/24-2-Sej-dule/Sej-dule?tab=coc-ov-file 에 접속하여 Code → Download ZIP을 클릭합니다.
+     - 아래 명령어를 사용하여 파일을 설치할 수 있습니다.
+     ```bash
+      git clone https://github.com/24-2-Sej-dule/Sej-dule.git
+      cd Sej-dule
+      ```
+
+2.  HTML 파일 실행
+
+
+     - `index.html` 파일을 브라우저에서 실행합니다.
+     - 이를 통해 Sej-dule(셋둘)을 이용할 수 있습니다.
 
 2. 페이지 제공
 
