@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-permalink: /about/
+permalink: https://sej-dule.readthedocs.io/
 ---
 
 # About Sej-dule

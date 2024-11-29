@@ -5,7 +5,11 @@ permalink: /contact/
 ---
 
 # Contact Us
+Seo Mikyung
+- seomk08@naver.com
 
-Feel free to reach out via:
-- Email: [example@example.com](mailto:example@example.com)
-- Social Media: [Twitter](https://twitter.com), [LinkedIn](https://linkedin.com)
+Baek Sejin
+- whitesejin@sju.ac.kr
+
+Jang Seohyun
+- jsh030213@gmail.com
