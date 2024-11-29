@@ -10,7 +10,16 @@ Welcome to Sej-dule's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-
+Project_Introduction
+   Getting_start
+   How_to_use
+   Technical_Overview
+   API_Reference
+   Configuration_Guide
+   Maintenance_and_Troubleshotting
+   Collabolator
+   FAQ
+   Release_Notes
 
 Indices and tables
 ==================
