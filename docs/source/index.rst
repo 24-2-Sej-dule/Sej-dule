@@ -7,19 +7,19 @@ Welcome to Sej-dule's documentation!
 ====================================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 10
    :caption: Contents:
 
-Project_Introduction
-   Getting_start
-   How_to_use
-   Technical_Overview
-   API_Reference
-   Configuration_Guide
-   Maintenance_and_Troubleshotting
-   Collabolator
-   FAQ
-   Release_Notes
+   Project_Introduction.rst
+   Getting_start.rst
+   How_to_use.rst
+   Technical_Overview.rst
+   API_Reference.rst
+   Configuration_Guide.rst
+   Maintenance_and_Troubleshotting.rst
+   Collabolator.rst
+   FAQ.rst
+   Release_Notes.rst
 
 Indices and tables
 ==================
