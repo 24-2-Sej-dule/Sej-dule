@@ -10,7 +10,8 @@ permalink: /community/
 
 ---
 
-## Communication Channels
+
+# Communication Channels
 
 Connect with us and the community on popular platforms:
 
@@ -18,5 +19,6 @@ Connect with us and the community on popular platforms:
 - **[E-mail](jsh030213@gmail.com)**: Join our workspace for focused discussions.
 
 ---
+
 
 We are looking forward to hearing your feedback! Your opinions help us grow!
