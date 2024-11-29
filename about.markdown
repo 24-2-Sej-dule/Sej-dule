@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-permalink: https://sej-dule.readthedocs.io
+permalink: /about/
 ---
 
 # Mission Statement
