@@ -2,7 +2,7 @@
 
 **v1.0**
 
-- Created documentation on Read the Docs
+- Created Read the Docs document
 - Deployed GitHub Pages (Jekyll-based)
 
 **v1.1 (Planned)**
