@@ -31,18 +31,19 @@
 
 **1. 프로젝트 다운로드**
 
-    1. GitHub에서 프로젝트 클론
-      - https://github.com/24-2-Sej-dule/Sej-dule?tab=coc-ov-file 에 접속하여 Code → Download ZIP을 클릭합니다.
-      - 아래 명령어를 사용하여 파일을 설치할 수 있습니다.
+- GitHub에서 프로젝트 클론
 
-      ```bash
-        git clone https://github.com/24-2-Sej-dule/Sej-dule.git
-        cd Sej-dule
-      ```
+  - https://github.com/24-2-Sej-dule/Sej-dule?tab=coc-ov-file 에 접속하여 Code → Download ZIP을 클릭합니다.
+  - 아래 명령어를 사용하여 파일을 설치할 수 있습니다.
 
-    2. HTML 파일 실행
-      - `index.html` 파일을 브라우저에서 실행합니다.
-      - 이를 통해 Sej-dule(셋둘)을 이용할 수 있습니다.
+    ```bash
+      git clone https://github.com/24-2-Sej-dule/Sej-dule.git
+      cd Sej-dule
+    ```
+
+- HTML 파일 실행
+  - `index.html` 파일을 브라우저에서 실행합니다.
+  - 이를 통해 Sej-dule(셋둘)을 이용할 수 있습니다.
 
 **2. 페이지 제공**
 

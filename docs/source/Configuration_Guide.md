@@ -1,7 +1,7 @@
 # Configuration Guide
 
-- Nothing
+Nothing
 
 ---
 
-- 기본설정없음
+기본설정없음
