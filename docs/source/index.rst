@@ -7,7 +7,7 @@ Welcome to Sej-dule's documentation!
 ====================================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 10
    :caption: Contents:
 
    Project_Introduction
@@ -17,7 +17,7 @@ Welcome to Sej-dule's documentation!
    API_Reference
    Configuration_Guide
    Maintenance_and_Troubleshotting
-   Collabolator
+   Contribution_Guidelines
    FAQ
    Release_Notes
 
