@@ -22,10 +22,10 @@ title: Sej-dule
 email: jsh030213@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   "Sej-dule" is a web application designed to help Sejong University students easily view classroom schedules and quickly identify available time slots.
-baseurl: "/24-2-Sej-dule/Sej-dule/" # the subpath of your site, e.g. /blog
+baseurl: "/Sej-dule/" # the subpath of your site, e.g. /blog
 url: "https://24-2-sej-dule.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: sej-dule
-github_username: sej-dule
+twitter_username: jekyllrb
+github_username: 24-2-Sej-dule/sej-dule
 
 # Build settings
 theme: minima
