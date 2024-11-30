@@ -15,14 +15,22 @@ permalink: /about/
 
 - This project is designed for students looking to utilize available classrooms.
 
+#
+
 ---
+
+#
 
 ## Quick Links
 
 - [GitHub Repository](https://github.com/24-2-Sej-dule/Sej-dule)
 - [Read the Documentation](https://sej-dule.readthedocs.io/)
 
+#
+
 ---
+
+#
 
 ## Key Features
 
@@ -30,7 +38,11 @@ permalink: /about/
 - Highlight free periods to make available times easily identifiable.
 - Add a filter feature to allow easy searching by classroom and date.
 
+#
+
 ---
+
+#
 
 ## Differentiation
 
