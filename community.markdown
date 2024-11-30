@@ -8,11 +8,11 @@ permalink: /community/
 
 - The Sej-dule community is a space where developers, users, and contributors collaborate. Your participation drives the project's growth!
 
-# &nbsp;
+&nbsp;
 
 ---
 
-# &nbsp;
+&nbsp;
 
 # Communication Channels
 
@@ -21,10 +21,10 @@ Connect with us and the community on popular platforms:
 - **[KakaoTalk](https://open.kakao.com/o/gU3ljH2g)**: Chat with contributors and users in real time.
 - **[E-mail](jsh030213@gmail.com)**: Join our workspace for focused discussions.
 
-# &nbsp;
+&nbsp;
 
 ---
 
-# &nbsp;
+&nbsp;
 
 We are looking forward to hearing your feedback! Your opinions help us grow!
