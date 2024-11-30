@@ -1,6 +1,8 @@
 # Sej-dule (셋둘)
 
 **Language**: [KOREAN](README_KOR.md)
+**Official Website**: [Sej-dule](https://24-2-sej-dule.github.io/Sej-dule/)
+**Document**: [Sej-dule](https://sej-dule.readthedocs.io/)
 
 ### 1. Project Overview
 
