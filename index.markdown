@@ -1,8 +1,8 @@
----
+—
 layout: home
 title: Home
 permalink: /
----
+—
 
 # Welcome to Sej-dule!
 
