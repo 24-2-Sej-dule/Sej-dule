@@ -133,6 +133,17 @@ collegeSelect.addEventListener("change", function () {
   });
 });
 
+// select에서 내용 클릭했을 때 색상 진하게
+document.querySelectorAll(".box-shadow10").forEach(function (selectBox) {
+  // 각 셀렉트 박스에 대해 change 이벤트 리스너 추가
+  selectBox.addEventListener("change", function () {
+    // 사용자가 선택을 했을 경우 class를 추가하여 텍스트 색상을 검정색으로 변경
+    if (this.value) {
+      this.classList.add("focus");
+    }
+  });
+});
+
 //모달창, 백엔드 연결 없어서 catch만됨
 document.addEventListener("DOMContentLoaded", () => {
   const signupForm = document.getElementById("signupForm");
