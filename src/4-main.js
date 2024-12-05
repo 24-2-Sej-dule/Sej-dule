@@ -271,30 +271,85 @@ const ctx = document.getElementById("myChart");
 new Chart(ctx, {
   type: "bar",
   data: {
-    labels: ["월", "화", "수", "목", "금"],
+    labels: ["월", "화", "수", "목", "금"], // X축 레이블
     datasets: [
       {
+        label: "강의 시간",
+        data: [9, 9, 9, 9, 9], // 데이터 값
+        backgroundColor: "rgba(0, 0, 0, 0)", // 막대 색상
+        borderRadius: 10, // 상단 모서리 둥글게 설정
+      },
+      {
         label: "이용 가능 시간",
-        data: [12, 19, 3, 5, 2, 3],
-        borderWidth: 1,
-        backgroundColor: "#fb8c00",
+        data: [1.5, 0, 1.5, 0, 0], // 데이터 값
+        borderRadius: 50,
+        backgroundColor: "rgba(251, 140, 0, 1)", // #fb8c00을 rgba로 변경
+        borderRadius: 10, // 상단 모서리 둥글게 설정
+      },
+      {
+        label: "강의 시간",
+        data: [1.5, 0, 1.5, 7, 9], // 데이터 값
+        backgroundColor: "rgba(0, 0, 0, 0.0)", // 막대 색상
+        borderRadius: 10, // 상단 모서리 둥글게 설정
+      },
+      {
+        label: "이용 가능 시간",
+        data: [1.5, 0, 1.5, 2, 0], // 데이터 값
+        borderRadius: 50,
+        backgroundColor: "rgba(251, 140, 0, 1)", // #fb8c00을 rgba로 변경
+        borderRadius: 10, // 상단 모서리 둥글게 설정
+      },
+      {
+        label: "강의 시간",
+        data: [1.5, 0, 1.5, 0, 0], // 데이터 값
+        backgroundColor: "rgba(0, 0, 0, 0.0)", // 막대 색상
+        borderRadius: 10, // 상단 모서리 둥글게 설정
+      },
+      {
+        label: "강의 시간",
+        data: [0, 0, 2, 0, 0], // 데이터 값
+        backgroundColor: "rgba(0, 0, 0, 0.0)", // 막대 색상
+        borderRadius: 10, // 상단 모서리 둥글게 설정
+      },
+      {
+        label: "이용 가능 시간",
+        data: [3, 0, 2, 1, 0], // 데이터 값
+        borderRadius: 50,
+        backgroundColor: "rgba(251, 140, 0, 1)", // #fb8c00을 rgba로 변경
+        borderRadius: 10, // 상단 모서리 둥글게 설정
+      },
+      {
+        label: "강의 시간",
+        data: [15, 9, 18, 7, 18], // 데이터 값
+        backgroundColor: "rgba(0, 0, 0, 0)", // 막대 색상
+        borderRadius: 10, // 상단 모서리 둥글게 설정
       },
     ],
   },
   options: {
-    scales: {
-      y: {
-        ticks: {
-          callback: function (value, index, values) {
-            // Y축 레이블을 9~18로 변경
-            return Math.abs(value);
-          },
-        },
-        min: -18, // Y축 최소값
-        max: -9, // Y축 최대값 (9개의 값 표시)
+    plugins: {
+      legend: {
+        display: false, // 범례 숨기기
       },
     },
     responsive: false, // 반응형 비활성화
-    maintainAspectRatio: false, // 종횡비 유지 비활성화 (원하는 크기를 정확히 반영)
+    maintainAspectRatio: false, // 종횡비 유지 비활성화
+    scales: {
+      x: {
+        stacked: true, // X축 스택 활성화
+        categoryPercentage: 1, // 카테고리 간격 조정
+      },
+      y: {
+        stacked: true, // Y축 스택 활성화
+        ticks: {
+          callback: function (value) {
+            return value; // Y축 값 그대로 표시
+          },
+        },
+        min: 9, // Y축 최소값
+        max: 18, // Y축 최대값
+        reverse: true,
+      },
+    },
   },
 });
