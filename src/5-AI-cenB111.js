@@ -344,7 +344,7 @@ new Chart(ctx, {
       },
       {
         label: "이용 가능 시간",
-        data: [3, 0, 2, 1, 0], // 데이터 값
+        data: [4, 0, 2, 1, 0], // 데이터 값
         borderRadius: 50,
         backgroundColor: "rgba(251, 140, 0, 1)", // #fb8c00을 rgba로 변경
         borderRadius: 10, // 상단 모서리 둥글게 설정
@@ -386,7 +386,7 @@ new Chart(ctx, {
           },
         },
         min: 9, // Y축 최소값
-        max: 18, // Y축 최대값
+        max: 19, // Y축 최대값
         reverse: true,
         grid: {
           color: "rgba(0, 0, 0, 0.06)", // X축 그리드 색상 연하게 설정
