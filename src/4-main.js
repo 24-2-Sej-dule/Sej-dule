@@ -271,12 +271,13 @@ const ctx = document.getElementById("myChart");
 new Chart(ctx, {
   type: "bar",
   data: {
-    labels: ["월", "화", "수", "목", "금", "토", "일"],
+    labels: ["월", "화", "수", "목", "금"],
     datasets: [
       {
-        label: "# of Votes",
+        label: "이용 가능 시간",
         data: [12, 19, 3, 5, 2, 3],
         borderWidth: 1,
+        backgroundColor: "#fb8c00",
       },
     ],
   },
@@ -286,7 +287,6 @@ new Chart(ctx, {
         ticks: {
           callback: function (value, index, values) {
             // Y축 레이블을 9~18로 변경
-
             return Math.abs(value);
           },
         },
@@ -294,5 +294,7 @@ new Chart(ctx, {
         max: -9, // Y축 최대값 (9개의 값 표시)
       },
     },
+    responsive: false, // 반응형 비활성화
+    maintainAspectRatio: false, // 종횡비 유지 비활성화 (원하는 크기를 정확히 반영)
   },
 });
