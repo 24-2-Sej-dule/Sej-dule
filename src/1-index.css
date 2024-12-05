@@ -8,7 +8,7 @@
 }
 
 /* 로고 */
-.bubble-container img {
+logo > img {
   width: 250px;
   margin: 2rem;
 }
