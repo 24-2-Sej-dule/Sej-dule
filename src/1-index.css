@@ -45,6 +45,7 @@
 .button-container:hover button {
   color: white;
   background-color: var(--red);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   /* background-color: white;
   color: var(--red);
   box-shadow: inset 0px 0px 0px 2px var(--red); */
