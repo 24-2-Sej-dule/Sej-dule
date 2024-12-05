@@ -226,6 +226,18 @@ var calendar = new FullCalendar.Calendar(calendarEl, {
       monthMode: true,
     },
   },
+
+  datesSet: function () {
+    // datesSet이 호출될 때 (prev, next, today 버튼 누를 때 포함)
+    const today = new Date();
+    const todayStr = today.toISOString().split("T")[0];
+    const activeDate = calendar.getDate().toISOString().split("T")[0];
+
+    // 오늘 날짜와 달력의 현재 날짜가 같으면 이벤트 정보를 표시
+    if (activeDate === todayStr) {
+      eventRenderToday();
+    }
+  },
 });
 
 calendar.render();
