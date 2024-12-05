@@ -298,105 +298,44 @@ new Chart(ctx, {
 });
 
 /*------------------------서미경 셀렉트박스구역-----------------------*/
-window.onload = () => {
-  // 모든 드롭다운 버튼에 클릭 이벤트 설정
-  document.querySelectorAll(".dropbtn").forEach((button) => {
-    button.addEventListener("click", function (e) {
-      e.stopPropagation();
-      const dropdownContent =
-        this.closest(".dropdown").querySelector(".dropdown-content");
+// college와 major select 요소 가져오기
+const collegeSelect = document.getElementById("college");
+const majorSelect = document.getElementById("major");
 
-      // 강의실 드롭다운의 경우 건물명이 선택되지 않았다면 열리지 않도록 처리
-      if (
-        button.closest("#major-dropdown") &&
-        !document
-          .querySelector("#college-dropdown .dropbtn_content")
-          .innerText.includes("대양AI센터") &&
-        !document
-          .querySelector("#college-dropdown .dropbtn_content")
-          .innerText.includes("군자관")
-      ) {
-        return; // 건물명을 선택하지 않았을 때 강의실 드롭다운이 열리지 않음
-      }
-
-      closeAllDropdowns(); // 다른 열린 드롭다운을 모두 닫음
-      dropdownContent.classList.toggle("show");
-    });
-  });
-
-  // 모든 건물명에 대해 클릭 이벤트 설정
-  const buildingElements = document.querySelectorAll(".buildingname");
-  buildingElements.forEach((building) => {
-    building.addEventListener("click", function () {
-      updateDropdownValue(this.innerText, "#college-dropdown");
-      updateClassrooms(this.innerText); // 선택된 건물에 따라 강의실 업데이트
-      closeAllDropdowns(); // 선택 후 드롭다운 닫기
-    });
-  });
-
-  // 페이지 외부 클릭 시 모든 드롭다운 닫기
-  window.onclick = (e) => {
-    if (!e.target.matches(".dropbtn") && !e.target.matches(".dropbtn_click")) {
-      closeAllDropdowns();
-    }
-  };
+// 단과대와 학과 데이터 매핑
+const collegeMajors = {
+  "AI-center": [
+    { name: "센B110", url: "5-AI-cenB110.html" },
+    { name: "센B111", url: "5-AI-cenB111.html" },
+  ],
 };
 
-// 드롭다운 값을 업데이트하는 함수
-function updateDropdownValue(value, dropdownSelector) {
-  const dropdown = document.querySelector(dropdownSelector);
-  if (dropdown) {
-    const dropbtnContent = dropdown.querySelector(".dropbtn_content");
-    dropbtnContent.innerText = value; // 선택된 값 업데이트
-    dropbtnContent.style.color = "#252525"; // 선택된 후 텍스트 색상 변경
-    dropdown.querySelector(".dropbtn").style.borderColor = "#3992a8"; // 선택된 후 버튼 테두리 색상 변경
-  }
-}
+// 단과대 선택 시 학과 목록 업데이트
+collegeSelect.addEventListener("change", function () {
+  const selectedCollege = collegeSelect.value; // 선택된 단과대학
+  const majors = collegeMajors[selectedCollege] || []; // 학과 목록
 
-// 모든 드롭다운을 닫는 함수
-function closeAllDropdowns() {
-  const dropdowns = document.querySelectorAll(".dropdown-content");
-  dropdowns.forEach((dropdown) => {
-    dropdown.classList.remove("show");
+  // 학과 select 초기화
+  majorSelect.innerHTML =
+    '<option value="" disabled selected>강의실을 선택하세요</option>';
+
+  // 학과 목록 추가
+  majors.forEach((major) => {
+    const option = document.createElement("option");
+    option.value = major.url; // 학과 URL
+    option.textContent = major.name; // 학과 이름
+    majorSelect.appendChild(option);
   });
-}
+});
 
-// 선택된 건물에 따라 강의실 목록을 업데이트하는 함수
-function updateClassrooms(buildingName) {
-  const majorDropdown = document.querySelector(
-    "#major-dropdown .dropdown-content"
-  );
-  majorDropdown.innerHTML = ""; // 기존 강의실 목록 초기화
+// 학과 선택 시 페이지 이동
+majorSelect.addEventListener("change", function () {
+  const selectedPage = majorSelect.value; // 선택된 URL
 
-  let classrooms = [];
-  let urls = {};
-
-  if (buildingName === "대양AI센터") {
-    classrooms = ["센B110", "센B111"];
-    urls = {
-      센B110: "5-AI-cenB110.html",
-      센B111: "5-AI-cenB111.html",
-    };
-  } else if (buildingName === "군자관") {
-    classrooms = ["군502"];
-    urls = {
-      군502: "5-gunza-502.html",
-    };
+  if (selectedPage) {
+    // 페이지 이동
+    setTimeout(() => {
+      window.location.href = selectedPage;
+    }, 100); // 부드러운 전환용 짧은 딜레이
   }
-
-  // 강의실 목록을 동적으로 추가
-  classrooms.forEach((room) => {
-    const div = document.createElement("div");
-    div.classList.add("classname");
-    div.innerText = room;
-    div.addEventListener("click", function () {
-      updateDropdownValue(this.innerText, "#major-dropdown");
-      closeAllDropdowns(); // 선택 후 드롭다운 닫기
-      // 선택된 강의실에 해당하는 URL로 이동
-      setTimeout(() => {
-        window.location.href = urls[room];
-      }, 100);
-    });
-    majorDropdown.appendChild(div);
-  });
-}
+});

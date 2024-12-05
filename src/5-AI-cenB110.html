@@ -92,53 +92,27 @@
           <div class="chart-container__select box-shadow">
             <div class="chart-container-main">
               <section class="chart-main">
-                <div class="dropdown-container">
-                  <!-- 단과대 드롭다운 -->
-                  <div class="dropdown" id="college-dropdown">
-                    <button class="dropbtn">
-                      <span class="dropbtn_content"
-                        >건물명을 먼저 선택해주세요.</span
-                      >
-                      <span
-                        class="dropbtn_click"
-                        style="
-                          font-family: Material Icons;
-                          font-size: 16px;
-                          color: #3b3b3b;
-                        "
-                        >▼</span
-                      >
-                    </button>
-                    <div class="dropdown-content">
-                      <div class="buildingname">대양AI센터</div>
-                      <div class="buildingname">군자관</div>
-                    </div>
+                <div class="selectbox-container">
+                  <!-- 단과대 -->
+                  <div class="signup-form__group">
+                    <div class="form-txt">건물명</div>
+                    <select class="box-shadow10" id="college" name="college">
+                      <option value="" disabled selected>
+                        건물을 먼저 선택해주세요
+                      </option>
+                      <option value="AI-center">대양AI센터</option>
+                    </select>
                   </div>
 
-                  <!-- 강의실 드롭다운 -->
-                  <div class="dropdown" id="major-dropdown">
-                    <button class="dropbtn">
-                      <div class="dropbtn_content">강의실을 선택해주세요.</div>
-
-                      <div
-                        class="dropbtn_click"
-                        style="
-                          font-family: Material Icons;
-                          font-size: 16px;
-                          color: #3b3b3b;
-                        "
-                      >
-                        ▼
-                      </div>
-                    </button>
-                    <div class="dropdown-content">
-                      <div class="classname">센B110</div>
-                      <div class="classname">센B111</div>
-                      <div class="classname">군502</div>
-                    </div>
+                  <!-- 학과 -->
+                  <div class="signup-form__group">
+                    <div class="form-txt">강의실명</div>
+                    <select class="box-shadow10" id="major" name="major">
+                      <option value="">센B110</option>
+                    </select>
                   </div>
                 </div>
-
+                <p>대양AI센터 - 센B110</p>
                 <div>
                   <canvas id="myChart"></canvas>
                 </div>
@@ -148,6 +122,6 @@
         </div>
       </div>
     </main>
-    <script src="4-main.js"></script>
+    <script src="5-AI-cenB110.js"></script>
   </body>
 </html>
