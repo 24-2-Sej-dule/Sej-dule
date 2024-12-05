@@ -52,13 +52,13 @@ main {
 .link-container {
   width: 100%;
   height: 100%;
-  justify-content: space-between; /* 상하 간격을 균등하게 */
+  /* justify-content: space-between; 상하 간격을 균등하게 */
 }
 
 /* 링크 컨테이너 속 링크를 담는 박스 */
 .link-container__elements {
   height: 100%;
-  padding-top: 1rem;
+  /* padding-top: 1rem; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -71,7 +71,7 @@ main {
 
   width: 100%;
   padding: 0.65rem 0.7rem;
-  margin-bottom: 0.6rem;
+  margin-top: 0.8rem;
 
   white-space: nowrap; /* 텍스트를 한 줄로 표시 */
   overflow: hidden; /* 넘치는 텍스트를 숨김 */

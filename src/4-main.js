@@ -273,14 +273,13 @@ style.innerHTML = `
     display: inline-block;
     border-left: 2px solid rgba(0,0,0,0.8);
     padding-left:0.2rem;
-    font-size: 0.8rem;
-    letter-spacing: 0.1rem;
+    font-size: 0.9rem;
+    letter-spacing: 0.01rem;
     margin-bottom: 0.2rem;
   }
   .event-details {
     font-size: 0.75rem;
-    color:rgba(0,0,0,0.5);
-    margin-top:0.3rem;
+    margin-top:0.2rem;
     letter-spacing: 0.02rem
   }
   .no-event {

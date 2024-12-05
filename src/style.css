@@ -69,8 +69,6 @@ main {
 /* 바로가기 타이틀 */
 .info-title {
   display: flex;
-  padding-bottom: 0.7rem;
-  border-bottom: 1px solid var(--gray1);
 }
 
 .title {
