@@ -334,7 +334,7 @@ new Chart(ctx, {
           },
         },
         min: 9, // Y축 최소값
-        max: 18, // Y축 최대값
+        max: 19, // Y축 최대값
         reverse: true,
         grid: {
           color: "rgba(0, 0, 0, 0.06)", // X축 그리드 색상 연하게 설정
