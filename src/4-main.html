@@ -18,6 +18,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.0/xlsx.full.min.js"></script>
     <!-- full calendar -->
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.7/index.global.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     <title>물어보세종</title>
   </head>
@@ -90,7 +91,11 @@
         <div class="chart-container">
           <div class="chart-container__select box-shadow">
             <div class="chart-container-main">
-              <section class="chart-main"></section>
+              <section class="chart-main">
+                <div>
+                  <canvas id="myChart"></canvas>
+                </div>
+              </section>
             </div>
           </div>
         </div>

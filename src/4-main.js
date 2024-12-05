@@ -263,3 +263,36 @@ style.innerHTML = `
   }
 `;
 document.head.appendChild(style);
+
+// Chart.js
+
+const ctx = document.getElementById("myChart");
+
+new Chart(ctx, {
+  type: "bar",
+  data: {
+    labels: ["월", "화", "수", "목", "금", "토", "일"],
+    datasets: [
+      {
+        label: "# of Votes",
+        data: [12, 19, 3, 5, 2, 3],
+        borderWidth: 1,
+      },
+    ],
+  },
+  options: {
+    scales: {
+      y: {
+        ticks: {
+          callback: function (value, index, values) {
+            // Y축 레이블을 9~18로 변경
+
+            return Math.abs(value);
+          },
+        },
+        min: -18, // Y축 최소값
+        max: -9, // Y축 최대값 (9개의 값 표시)
+      },
+    },
+  },
+});
