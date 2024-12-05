@@ -41,11 +41,7 @@ main {
 .info-container__calender {
   /* 같은 크기로 분배 */
   flex-grow: 1;
-  padding: 0.7rem 1rem 0 1rem;
-}
-
-.info-container__calender {
-  padding: 0.7rem 1rem;
+  padding: 0.9rem 1rem 0 1.2rem;
 }
 
 /* 상단 바로가기 전체 container */
@@ -65,13 +61,13 @@ main {
 }
 /* 링크 컨테이너 속 링크들/ */
 .link-container a {
-  font-size: 13px;
+  font-size: 14px;
   text-decoration: none;
   color: var(--gray2);
 
   width: 100%;
   padding: 0.65rem 0.7rem;
-  margin-top: 0.8rem;
+  margin-top: 0.9rem;
 
   white-space: nowrap; /* 텍스트를 한 줄로 표시 */
   overflow: hidden; /* 넘치는 텍스트를 숨김 */
