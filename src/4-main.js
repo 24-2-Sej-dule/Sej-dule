@@ -156,6 +156,7 @@ const events = [
 ];
 
 // FullCalendar 초기화
+// FullCalendar 초기화
 var calendar = new FullCalendar.Calendar(calendarEl, {
   initialView: "dayGridMonth",
   height: "auto",
@@ -212,26 +213,44 @@ var calendar = new FullCalendar.Calendar(calendarEl, {
     info.dayEl.classList.add("selected-date-cell"); // 클릭된 날짜에 클래스 추가
   },
 
-  // 이벤트 컨텐츠에 스타일 적용 (이벤트를 날짜 셀 뒤에 겹쳐지도록 설정)
   eventContent: function (arg) {
     return {
       html: `<div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(33, 150, 243, 0.2); opacity: 1; z-index: -1;">${arg.event.title}</div>`,
     };
   },
-  eventDisplay: "background", // 이벤트를 배경 요소로 설정해 겹쳐지도록 합니다.
+  eventDisplay: "background",
 
-  // 달력 날짜가 설정될 때 실행, 마지막 주 숨기기
   views: {
     dayGridMonth: {
       type: "dayGrid",
       duration: { months: 1 },
       monthMode: true,
-      // fixedWeekCount: false, // 필요에 따라 유동적으로 주 수 결정
     },
   },
 });
 
 calendar.render();
+
+// 오늘 날짜 이벤트 자동 선택
+function eventRenderToday() {
+  const today = new Date();
+  const todayStr = today.toISOString().split("T")[0];
+  const todayCell = document.querySelector(
+    `.fc-daygrid-day[data-date='${todayStr}']`
+  );
+
+  if (todayCell) {
+    calendar.trigger("dateClick", {
+      dateStr: todayStr,
+      dayEl: todayCell,
+    });
+  }
+}
+
+// 페이지 로드 후 오늘 날짜 이벤트 정보 자동 표시
+document.addEventListener("DOMContentLoaded", function () {
+  eventRenderToday();
+});
 
 // 이전 달의 날짜와 다음 달의 날짜를 연한 회색으로 표시
 const style = document.createElement("style");
@@ -245,7 +264,6 @@ style.innerHTML = `
     padding-left:0.2rem;
     font-size: 0.8rem;
     letter-spacing: 0.1rem;
-    // background-color:var(--gray);
     margin-bottom: 0.2rem;
   }
   .event-details {
@@ -260,6 +278,9 @@ style.innerHTML = `
     letter-spacing: 0.02rem;
     margin-top:0.2rem;
     font-size: 0.8rem;
+  }
+  .selected-date-cell {
+    background-color: rgba(255, 165, 0, 0.3); /* 주황색 배경 강조 */
   }
 `;
 document.head.appendChild(style);
@@ -338,6 +359,14 @@ new Chart(ctx, {
       x: {
         stacked: true, // X축 스택 활성화
         categoryPercentage: 1, // 카테고리 간격 조정
+        grid: {
+          color: "rgba(0, 0, 0, 0.06)", // X축 그리드 색상 연하게 설정
+        },
+        ticks: {
+          font: {
+            size: 13.5, // X축 레이블 크기 설정
+          },
+        },
       },
       y: {
         stacked: true, // Y축 스택 활성화
@@ -349,6 +378,9 @@ new Chart(ctx, {
         min: 9, // Y축 최소값
         max: 18, // Y축 최대값
         reverse: true,
+        grid: {
+          color: "rgba(0, 0, 0, 0.06)", // X축 그리드 색상 연하게 설정
+        },
       },
     },
   },
