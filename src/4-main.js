@@ -156,7 +156,6 @@ const events = [
 ];
 
 // FullCalendar 초기화
-// FullCalendar 초기화
 var calendar = new FullCalendar.Calendar(calendarEl, {
   initialView: "dayGridMonth",
   height: "auto",
@@ -364,7 +363,7 @@ new Chart(ctx, {
         },
         ticks: {
           font: {
-            size: 13.5, // X축 레이블 크기 설정
+            size: 14.5, // X축 레이블 크기 설정
           },
         },
       },
