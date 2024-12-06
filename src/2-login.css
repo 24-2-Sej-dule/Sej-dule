@@ -117,7 +117,7 @@ input:focus::placeholder {
 
 .button-container__login.active:hover {
   background-color: var(--red);
-  box-shadow: inset 0px 0px 0px 3rem rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0px 0px 0px 3rem rgba(255, 255, 255, 0.05);
 }
 
 .button-container__signup:hover {
