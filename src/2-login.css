@@ -121,8 +121,8 @@ input:focus::placeholder {
 }
 
 .button-container__signup:hover {
-  background-color: rgb(250, 250, 250);
-  color: rgb(150, 150, 150);
+  background-color: rgb(252, 252, 252);
+  /* color: rgb(150, 150, 150); */
 }
 
 .button-container__img {
