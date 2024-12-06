@@ -1,0 +1,308 @@
+main {
+  height: calc(100vh - 3.5rem); /* 전체 화면에서 상단 여백을 빼서 사용 */
+  padding: 1rem;
+}
+
+.nav-section {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 0.8rem 1.5rem 0 1.5rem;
+
+  width: 100vw;
+}
+.logo {
+  display: flex;
+}
+
+.logo img {
+  width: 2.5rem;
+}
+
+.chart-section {
+  display: flex;
+  height: 100%; /* 화면 전체 높이 */
+  width: 100%; /* 화면 전체 너비 */
+}
+
+/* 내 담당 왼쪽 : info-container */
+.info-container {
+  height: 100%;
+  width: 18%;
+  /* 에반가 18% */
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* 두 섹션 사이의 간격 */
+}
+
+.info-container__link,
+.info-container__calender {
+  /* 같은 크기로 분배 */
+  flex-grow: 1;
+  padding: 0.9rem 1rem 0 1.2rem;
+}
+
+/* 상단 바로가기 전체 container */
+.link-container {
+  width: 100%;
+  height: 100%;
+  /* justify-content: space-between; 상하 간격을 균등하게 */
+}
+
+/* 링크 컨테이너 속 링크를 담는 박스 */
+.link-container__elements {
+  height: 100%;
+  /* padding-top: 1rem; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* 링크 컨테이너 속 링크들/ */
+.link-container a {
+  font-size: 14px;
+  text-decoration: none;
+  color: var(--gray2);
+
+  width: 100%;
+  padding: 0.65rem 0.7rem;
+  margin-top: 0.9rem;
+
+  white-space: nowrap; /* 텍스트를 한 줄로 표시 */
+  overflow: hidden; /* 넘치는 텍스트를 숨김 */
+  text-overflow: ellipsis; /* 넘치는 부분을 '...'로 표시 */
+
+  background-color: white;
+  border: 1px solid rgb(240, 240, 240);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.03);
+  border-radius: 10px;
+
+  transition: all 0.2s ease;
+}
+
+.link-container a:hover {
+  background-color: rgba(0, 0, 0, 0.02);
+
+  box-shadow: 0 0px 3px rgba(0, 0, 0, 0.01);
+  border: 1px solid var(--gray);
+}
+
+/* 요소 감추기 */
+.link-container a:nth-child(5),
+.link-container a:nth-child(6),
+.link-container a:nth-child(7),
+.link-container a:nth-child(8) {
+  opacity: 0;
+}
+
+/* 하단 캘린터 부분 */
+.info-container img {
+  width: 100%;
+}
+
+/* 캘린더와 타이틀 박스화 */
+.calender-box {
+  height: 100%;
+}
+
+.academic-schedule {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.academic-schedule__day {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: black;
+}
+
+.academic-schedule__content {
+  color: black;
+  font-size: 0.7rem;
+  font-weight: 100;
+  margin-left: 1rem;
+}
+
+/* ----------------미경수정------------------ */
+/* 미경이 담당 오른쪽 : 차트 부분 */
+.chart-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end; /* 요소들을 아래로 정렬 */
+
+  height: 100%;
+  width: 60%;
+
+  margin-left: 0.8rem;
+}
+
+.chart-container__select {
+  width: 100%;
+  height: 100%;
+  justify-content: space-between; /* 상단(메인)과 하단(푸터)을 분리 */
+  padding: 1.5em 0;
+  /* background-color: #b5b5b5; */
+  /* padding값 추가 */
+  /* column-center 줌 스타일 중복돼서 */
+}
+
+/* 채팅만 */
+.chart-container-main {
+  flex-grow: 1; /* 채팅 부분이 남는 공간을 모두 차지하도록 */
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-around; */
+  width: 100%;
+  height: 100%;
+  /* padding 값 줘서 중복돼서 잠시 주석! */
+  overflow: auto;
+}
+
+.chart-introduce {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.chart-main {
+  /* flex-grow: 1; 채팅 부분이 남는 공간을 모두 차지하도록 */
+
+  padding: 1.5rem 1.1rem;
+  /* padding-top: 1.5rem; */
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-between;
+}
+
+/* 스크롤바 */
+/* 스크롤바 전체 영역 */
+::-webkit-scrollbar {
+  width: 10px; /* 스크롤바 너비 */
+}
+/* 스크롤바 트랙 */
+::-webkit-scrollbar-track {
+  background: rgb(245, 245, 245); /* 스크롤바 트랙 배경색 */
+  border-radius: 5px; /* 트랙의 둥근 모서리 */
+}
+
+/* 스크롤바 핸들 */
+::-webkit-scrollbar-thumb {
+  background: rgb(230, 230, 230);
+  border-radius: 5px;
+}
+
+/* 스크롤바 핸들 Hover 효과 */
+::-webkit-scrollbar-thumb:hover {
+  background: #b5b5b5;
+}
+
+/*--------------------------------셀렉트박스구역----------------------------*/
+.dropdown-container {
+  margin: 1rem 0; /* 드롭다운 컨테이너와 아래 요소 간 간격 */
+}
+.dropdown-label {
+  font-size: 12px;
+  margin: 10px;
+  font-weight: bold;
+  color: rgb(50, 50, 50);
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn_icon {
+  font-family: "Material Icons";
+}
+
+.dropbtn {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid rgb(94, 94, 94);
+  border-radius: 4px;
+  background-color: #fcfcfc;
+  font-weight: 400;
+  color: rgb(124, 124, 124);
+  padding: 12px;
+  width: 240px;
+  text-align: left;
+  cursor: pointer;
+  font-size: 12px;
+  z-index: 1;
+  position: relative;
+  margin: 0 0.7rem;
+}
+.dropdown-content {
+  display: none;
+  font-weight: 400;
+  background-color: #fcfcfc;
+  min-width: 240px;
+  border-radius: 8px;
+  height: 160px;
+  overflow: scroll;
+  box-shadow: 0px 0px 10px 3px rgba(190, 190, 190, 0.6);
+}
+.dropdown-content::-webkit-scrollbar {
+  width: 5px;
+  height: 10px;
+}
+.dropdown-content::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  background-color: rgb(194, 194, 194);
+}
+
+/* dropdown option들 */
+.dropdown-content div {
+  display: block;
+  text-decoration: none;
+  color: rgb(37, 37, 37);
+  font-size: 12px;
+  padding: 12px 20px;
+}
+.dropdown-content div:hover {
+  background-color: rgb(226, 226, 226);
+}
+
+.dropdown-content.show {
+  display: block;
+}
+
+/* 화살표 */
+.dropbtn_click {
+  display: flex;
+  flex-direction: row;
+  /* left: auto; */
+}
+/* 드롭다운 스타일 설정 */
+.dropdown-content {
+  display: none;
+  position: absolute; /* 드롭다운이 다른 요소에 영향을 미치지 않게 절대 위치로 설정 */
+  background-color: #fcfcfc;
+  min-width: 240px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1; /* 드롭다운이 항상 위에 보이도록 설정 */
+  border-radius: 8px;
+  overflow-y: auto;
+  max-height: 200px; /* 스크롤 가능하도록 최대 높이 설정 */
+  top: 100%; /* 드롭다운이 버튼 아래에 나타나도록 설정 */
+  left: 0;
+}
+
+/* 드롭다운 보이기 */
+.dropdown-content.show {
+  display: block;
+}
+
+.whatpage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #b5b5b5; */
+  padding-top: 1.5rem;
+}

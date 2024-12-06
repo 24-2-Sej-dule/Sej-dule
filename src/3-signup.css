@@ -145,11 +145,19 @@ select.focus {
   border-radius: 16px;
   font-weight: 500;
 
-  background-image: url("img/Check.png");
-
   background-repeat: no-repeat;
   background-position: right 10px center; /* 화살표 위치 */
   background-size: 20px; /* 화살표 크기 */
+}
+
+/* 기본 상태: 회색 체크박스 */
+.signup-form__group input.invalid {
+  background-image: url("img/Check.png");
+}
+
+/* 유효한 상태: 초록색 체크박스 */
+.signup-form__group input.valid {
+  background-image: url("img/Check_green.png");
 }
 
 .signup-form__group ::-webkit-input-placeholder {

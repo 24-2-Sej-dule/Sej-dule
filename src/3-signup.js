@@ -178,3 +178,38 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+// 닉네임, 아이디, 비밀번호 유효성 검사 후 만족하면 체크 초록색으로
+document.addEventListener("DOMContentLoaded", () => {
+  const nicknameInput = document.querySelector('input[name="nickname"]');
+  const emailInput = document.querySelector('input[name="email"]');
+  const passwordInput = document.querySelector('input[name="password"]');
+
+  // 유효성 검사 함수
+  function validateInput(input, condition) {
+    if (condition(input.value)) {
+      input.classList.add("valid");
+      input.classList.remove("invalid");
+    } else {
+      input.classList.add("invalid");
+      input.classList.remove("valid");
+    }
+  }
+
+  // 닉네임 유효성 검사 (값이 비어 있지 않으면 valid)
+  nicknameInput.addEventListener("input", () => {
+    validateInput(nicknameInput, (value) => value.trim().length > 0);
+  });
+
+  // 이메일 유효성 검사
+  emailInput.addEventListener("input", () => {
+    const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    validateInput(emailInput, (value) => emailPattern.test(value));
+  });
+
+  // 비밀번호 유효성 검사
+  passwordInput.addEventListener("input", () => {
+    const passwordPattern = /^(?=.*\d)[A-Za-z\d]{8,}$/; // 최소 8자, 숫자 1개 이상, 영어만 가능
+    validateInput(passwordInput, (value) => passwordPattern.test(value));
+  });
+});
