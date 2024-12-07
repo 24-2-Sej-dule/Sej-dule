@@ -32,7 +32,7 @@ loginForm.addEventListener("submit", async (event) => {
     if (!response.ok) throw Error();
     const token = await response.json();
     console.log(token);
-    location.href = "/4-chat.html";
+    location.href = "/4-main.html";
   } catch (e) {
     alert("로그인에 실패했습니다.");
   }
