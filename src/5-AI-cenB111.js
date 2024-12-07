@@ -28,7 +28,7 @@ new Chart(ctx, {
       },
       {
         label: "이용 가능 시간",
-        data: [1.5, 0, 1.5, 2, 0], // 데이터 값
+        data: [1.5, 0, 1.5, 3, 0], // 데이터 값
         borderRadius: 50,
         backgroundColor: "rgba(251, 140, 0, 1)", // #fb8c00을 rgba로 변경
         borderRadius: 10, // 상단 모서리 둥글게 설정
