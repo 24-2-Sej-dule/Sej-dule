@@ -69,6 +69,7 @@ main {
 /* 바로가기 타이틀 */
 .info-title {
   display: flex;
+  margin-left: 0.3rem;
 }
 
 .title {

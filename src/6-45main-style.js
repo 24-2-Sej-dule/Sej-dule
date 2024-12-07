@@ -275,6 +275,7 @@ style.innerHTML = `
     padding-left:0.2rem;
     font-size: 1rem;
     letter-spacing: 0.01rem;
+    margin-top: 0.2rem;
     margin-bottom: 0.2rem;
   }
   .event-details {

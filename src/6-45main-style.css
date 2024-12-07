@@ -38,12 +38,12 @@ main {
 
 .info-container__link {
   width: 100%;
-  padding: 1rem 1.3rem;
+  padding: 1rem;
 }
 .info-container__calender {
   width: 100%;
   height: 100%;
-  padding: 1rem 1.3rem;
+  padding: 1rem;
 }
 
 /* 상단 바로가기 전체 container */
@@ -69,7 +69,7 @@ main {
 
   width: 100%;
   padding: 0.65rem 0.7rem;
-  margin-top: 0.8rem;
+  margin-top: 0.9rem;
 
   white-space: nowrap; /* 텍스트를 한 줄로 표시 */
   overflow: hidden; /* 넘치는 텍스트를 숨김 */
@@ -77,14 +77,13 @@ main {
 
   background-color: white;
   border: 1px solid rgb(240, 240, 240);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.03);
   border-radius: 10px;
 
   transition: all 0.2s ease;
 }
 
 .link-container a:hover {
-  background-color: rgba(0, 0, 0, 0.02);
+  background-color: rgba(0, 0, 0, 0.03);
 
   box-shadow: 0 0px 3px rgba(0, 0, 0, 0.01);
   border: 1px solid var(--gray);
@@ -388,10 +387,10 @@ main {
   margin: 1rem 0; /* 드롭다운 컨테이너와 아래 요소 간 간격 */
   display: flex;
   flex-direction: row;
-  gap: 3rem; /* 드롭다운 버튼 사이의 간격 설정 */
+  gap: 2rem; /* 드롭다운 버튼 사이의 간격 설정 */
 }
 .dropdown-label {
-  font-size: 12px;
+  font-size: 10px;
   margin: 10px;
   font-weight: bold;
   color: rgb(50, 50, 50);
@@ -409,16 +408,17 @@ main {
 .dropbtn {
   display: flex;
   justify-content: space-between;
-  border: 1px solid rgb(232, 232, 232);
-  border-radius: 13px;
+  border: 1.5px solid rgb(230, 230, 230);
+  border-radius: 15px;
   background-color: white;
   font-weight: 400;
   color: rgb(180, 180, 180);
-  padding: 8px 7px 8px 14px;
-  width: 220px;
+  padding: 6.5px 4px 6.5px 12px;
+  width: 210px;
   text-align: left;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 13px;
+  /* font-weight: 500; */
   z-index: 1;
   position: relative;
   /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.03); */
@@ -527,11 +527,14 @@ main {
 }
 
 .whatpage {
+  font-size: 15px;
+  font-weight: 500;
   display: flex;
   justify-content: center;
   align-items: center;
   /* background-color: #b5b5b5; */
   padding-top: 1.5rem;
+  padding-bottom: 0.5rem;
 }
 
 /* Chart.js */
