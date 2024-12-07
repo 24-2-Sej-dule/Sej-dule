@@ -273,20 +273,20 @@ style.innerHTML = `
     display: inline-block;
     border-left: 2px solid rgba(0,0,0,0.8);
     padding-left:0.2rem;
-    font-size: 0.9rem;
+    font-size: 1rem;
     letter-spacing: 0.01rem;
     margin-bottom: 0.2rem;
   }
   .event-details {
-    font-size: 0.75rem;
-    margin-top:0.2rem;
+    font-size: 0.8rem;
+    margin-top:0.4rem;
     letter-spacing: 0.02rem
   }
   .no-event {
-    color:rgba(0,0,0,0.5);
+    color:rgba(0,0,0,0.3);
     font-size: 0.75rem;
     letter-spacing: 0.02rem;
-    margin-top:0.2rem;
+    margin-top:0.4rem;
     font-size: 0.8rem;
   }
   .selected-date-cell {

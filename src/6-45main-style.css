@@ -1,6 +1,7 @@
 main {
-  height: calc(100vh - 3.5rem); /* 전체 화면에서 상단 여백을 빼서 사용 */
-  padding: 1rem;
+  /* height: calc(100vh - 3.5rem); */
+  height: 100vh;
+  padding: 2rem;
 }
 
 .nav-section {
@@ -29,18 +30,20 @@ main {
 /* 내 담당 왼쪽 : info-container */
 .info-container {
   height: 100%;
-  width: 18%;
-  /* 에반가 18% */
+  width: 19.5%;
   display: flex;
   flex-direction: column;
   gap: 15px; /* 두 섹션 사이의 간격 */
 }
 
-.info-container__link,
+.info-container__link {
+  width: 100%;
+  padding: 1rem 1.3rem;
+}
 .info-container__calender {
-  /* 같은 크기로 분배 */
-  flex-grow: 1;
-  padding: 0.9rem 1rem 0 1.2rem;
+  width: 100%;
+  height: 100%;
+  padding: 1rem 1.3rem;
 }
 
 /* 상단 바로가기 전체 container */
@@ -66,7 +69,7 @@ main {
 
   width: 100%;
   padding: 0.65rem 0.7rem;
-  margin-top: 0.9rem;
+  margin-top: 0.8rem;
 
   white-space: nowrap; /* 텍스트를 한 줄로 표시 */
   overflow: hidden; /* 넘치는 텍스트를 숨김 */
@@ -169,6 +172,7 @@ main {
 #calendar {
   overflow: hidden; /* 전체 페이지 스크롤 막기 */
   padding: 0.3rem;
+  margin-top: 0.3rem;
 }
 
 .fc .fc-toolbar.fc-header-toolbar {
@@ -314,7 +318,7 @@ main {
   justify-content: flex-end; /* 요소들을 아래로 정렬 */
 
   height: 100%;
-  width: 60%;
+  width: 55%;
 
   margin-left: 0.8rem;
 }
