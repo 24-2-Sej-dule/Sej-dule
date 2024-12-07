@@ -11,52 +11,53 @@ new Chart(ctx, {
         label: "강의 시간",
         data: [9, 9, 9, 9, 9], // 데이터 값
         backgroundColor: "rgba(0, 0, 0, 0)", // 막대 색상
-        borderRadius: 10, // 상단 모서리 둥글게 설정
-      },
-      {
-        label: "이용 가능 시간",
-        data: [1.5, 0, 1.5, 0, 0], // 데이터 값
-        borderRadius: 50,
-        backgroundColor: "rgba(251, 140, 0, 1)", // #fb8c00을 rgba로 변경
-        borderRadius: 10, // 상단 모서리 둥글게 설정
       },
       {
         label: "강의 시간",
-        data: [1.5, 0, 1.5, 7, 9], // 데이터 값
-        backgroundColor: "rgba(0, 0, 0, 0.0)", // 막대 색상
-        borderRadius: 10, // 상단 모서리 둥글게 설정
+        data: [4, 4, 4.5, 0, 0], // 데이터 값
+        backgroundColor: "rgba(0, 0, 0, 0)", // 막대 색상
       },
       {
         label: "이용 가능 시간",
-        data: [1.5, 0, 1.5, 2, 0], // 데이터 값
+        data: [0.5, 0.5, 0.5, 1, 3], // 데이터 값
         borderRadius: 50,
         backgroundColor: "rgba(251, 140, 0, 1)", // #fb8c00을 rgba로 변경
-        borderRadius: 10, // 상단 모서리 둥글게 설정
       },
       {
         label: "강의 시간",
-        data: [1.5, 0, 1.5, 0, 0], // 데이터 값
+        data: [1.5, 0, 5, 1, 3], // 데이터 값
         backgroundColor: "rgba(0, 0, 0, 0.0)", // 막대 색상
-        borderRadius: 10, // 상단 모서리 둥글게 설정
+      },
+      {
+        label: "이용 가능 시간",
+        data: [4, 0, 0, 1, 1], // 데이터 값
+        borderRadius: 50,
+        backgroundColor: "rgba(251, 140, 0, 1)", // #fb8c00을 rgba로 변경
+      },
+      {
+        label: "강의 시간",
+        data: [1.5, 0, 0, 1, 3], // 데이터 값
+        backgroundColor: "rgba(0, 0, 0, 0.0)", // 막대 색상
       },
       {
         label: "강의 시간",
         data: [0, 0, 2, 0, 0], // 데이터 값
         backgroundColor: "rgba(0, 0, 0, 0.0)", // 막대 색상
-        borderRadius: 10, // 상단 모서리 둥글게 설정
       },
       {
         label: "이용 가능 시간",
-        data: [4, 0, 2, 1, 0], // 데이터 값
-        borderRadius: 50,
+        data: [4, 0, 2, 0.5, 0], // 데이터 값
         backgroundColor: "rgba(251, 140, 0, 1)", // #fb8c00을 rgba로 변경
-        borderRadius: 10, // 상단 모서리 둥글게 설정
       },
       {
         label: "강의 시간",
-        data: [15, 9, 18, 7, 18], // 데이터 값
+        data: [15, 5.5, 18, 2.5, 18], // 데이터 값
         backgroundColor: "rgba(0, 0, 0, 0)", // 막대 색상
-        borderRadius: 10, // 상단 모서리 둥글게 설정
+      },
+      {
+        label: "이용 가능 시간",
+        data: [0, 0, 0, 3, 0], // 데이터 값
+        backgroundColor: "rgba(251, 140, 0, 1)", // #fb8c00을 rgba로 변경
       },
     ],
   },
