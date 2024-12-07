@@ -196,7 +196,7 @@ button:hover {
 /* 서현 주석 */
 /* 팝업창 */
 .success-modal {
-  display: none; /* 기본적으로 숨김 */
+  display: none;
   position: fixed; /* 화면에 고정 */
   top: 0;
   left: 0;
@@ -209,30 +209,32 @@ button:hover {
 }
 .modal-content {
   background-color: white;
-  padding: 25px 20px;
-  border-radius: 16px;
+  padding: 25px;
+  border-radius: 15px;
   text-align: center;
   width: 300px;
+  box-shadow: 0 0 70px rgba(0, 0, 0, 0.2);
 }
 .success-modal h2 {
-  font-size: 1.8rem;
-  margin-bottom: 35px;
+  font-size: 1.5rem;
+  margin-bottom: 30px;
   font-weight: 600;
 }
 .success-modal p {
   font-size: 1rem;
+  letter-spacing: 0.01rem;
   color: dimgray;
   margin-bottom: 30px;
 }
 .modal-button {
-  background-color: black;
+  background-color: var(--red);
   color: white;
   padding: 10px 20px;
   border: none;
-  border-radius: 7px;
+  border-radius: 15px;
   cursor: pointer;
 }
 .modal-button:hover {
-  background-color: black;
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+  box-shadow: inset 0px 0px 0px 3rem rgba(255, 255, 255, 0.06);
+  /* box-shadow: 0 0 2px rgba(0, 0, 0, 0.1); */
 }
