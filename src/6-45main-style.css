@@ -231,6 +231,7 @@ main {
 .fc-daygrid-day-number {
   font-size: 12px; /* 날짜 숫자 크기를 줄임 */
   margin-left: 0.2rem;
+  cursor: pointer;
 }
 
 /* 오늘 날짜 셀 내부의 날짜 숫자 강조 */
