@@ -34,7 +34,7 @@ permalink: /about/
 
 ## Key Features
 
-### 1) Login and Sign-Up
+# 1) Login and Sign-Up
 
 - **Login Feature**
   - Prevents login with incorrect credentials.
@@ -47,7 +47,7 @@ permalink: /about/
 - **User Authentication**
   - Saves user information during sign-up, allowing login only with registered credentials.
 
-### 2) Show when the classroom is empty : Chart.js
+# 2) Show when the classroom is empty : Chart.js
 
 - **Chart.js Integration**
   - Utilized the open-source library Chart.js to create a timetable in a stacked bar chart format.
@@ -58,13 +58,13 @@ permalink: /about/
   - Visual distinction between occupied and free time slots is provided.
   - Hovering over the chart reveals how long the room is available.
 
-### 3) Academic Schedule Integration: FullCalendar
+# 3) Academic Schedule Integration: FullCalendar
 
 - Integrated the open-source library FullCalendar.js.
 - Consolidated the academic schedules scattered across the school website into one unified calendar.
 - Enabled users to click on a date to view the academic schedule for that specific day.
 
-### 4) Quick Access to School Websites
+# 4) Quick Access to School Websites
 
 - **Direct Links**
   - Provided quick access to school-related websites, including:
