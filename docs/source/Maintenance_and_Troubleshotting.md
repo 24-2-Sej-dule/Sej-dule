@@ -3,7 +3,7 @@
 **Regular Maintenance**
 
 - Update the database every semester
-- Upgrade to the latest version of Chart.js
+- Upgrade to the latest version of Chart.js, FullCalendar.js.
 
 **Troubleshooting**
 
@@ -14,7 +14,7 @@
 **정기 유지보수**
 
 - 매학기 데이터베이스 업데이트
-- 최신 Chart.js 버전으로 업그레이드
+- 최신 Chart.js, FullCalendar.js 버전으로 업그레이드
 
 **문제 해결**
 
