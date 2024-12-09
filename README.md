@@ -1,4 +1,4 @@
-# Sej-dule (셋둘)
+![image](https://github.com/user-attachments/assets/e7b8e66b-ed40-4b48-af45-a4412875267e)# Sej-dule (셋둘)
 
 **Language**: [KOREAN](README_KOR.md)
 
@@ -36,7 +36,7 @@ Sej-dule addresses these issues by offering a service that shows class schedules
     - Visual distinction between occupied and free time slots is provided.
     - Hovering over the chart reveals how long the room is available.
 
-### 3) Academic Schedule Integration: FullCalendar
+### 3) Academic Schedule Integration : FullCalendar
 - Integrated the open-source library FullCalendar.js.
 - Consolidated the academic schedules scattered across the school website into one unified calendar.
 - Enabled users to click on a date to view the academic schedule for that specific day.
@@ -69,6 +69,10 @@ Through this, classes can be opened at a certain time and when they are availabl
     - HTML
     - CSS
     - JavaScript
+    - Node.js
+    - Express
+    - MongoDB
+    - Mongoose
 - Library
     - Chart.js
 
