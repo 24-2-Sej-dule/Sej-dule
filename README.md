@@ -14,13 +14,42 @@ Sej-dule addresses these issues by offering a service that shows class schedules
 
 ## 2. Key Features
 
-- **Classroom Schedule Visualization by Time**
-    - Using the **Chart.js** library, Sej-dule visually displays classroom schedules by time slot, allowing users to quickly check a specific classroom’s class and empty periods at a glance.
-- **Emphasis on Available Time Slots**
-    - To help users easily identify free classrooms, **vacant times are visually highlighted**, enabling quick and clear checks of classroom availability.
-- **Search by Classroom and Date**
-    - To facilitate quick access to the classroom schedule for a specific date, Sej-dule provides **classroom and date filtering options**, allowing users to efficiently manage their time by quickly viewing the schedule of their preferred classroom.
+### 1) Login and Sign-Up
+- **Login Feature**
+    - Prevents login with incorrect credentials.
+- **Sign-Up Feature**
+    - Includes validation for the following:
+        - Nickname: Minimum 1 character.
+        - Username: Must follow email format.
+        - Password: Must be at least 8 characters long and include both letters and numbers.
+    - Valid input fields are highlighted in green.
+- **User Authentication**
+    - Saves user information during sign-up, allowing login only with registered credentials.
 
+### 2) Show when the classroom is empty : Chart.js
+- **Chart.js Integration**
+    - Utilized the open-source library Chart.js to create a timetable in a stacked bar chart format.
+- **Data Implementation**
+    - Timetable is generated using data collected via JavaScript.
+- **Features**
+    - Users can select a building and then choose a lecture room to display its timetable.
+    - Visual distinction between occupied and free time slots is provided.
+    - Hovering over the chart reveals how long the room is available.
+
+### 3) Academic Schedule Integration: FullCalendar
+- Integrated the open-source library FullCalendar.js.
+- Consolidated the academic schedules scattered across the school website into one unified calendar.
+- Enabled users to click on a date to view the academic schedule for that specific day.
+
+### 4) Quick Access to School Websites
+- **Direct Links**
+    - Provided quick access to school-related websites, including:
+        - Sejong University Official Website
+        - Daeyang Humanity College
+        - DoDream Portal
+        - Academic Information System
+    - Implemented using `<a>` tags for seamless navigation.
+      
 ## 3. Data Collection Method
 
 Classroom schedule data is gathered from the 2024 academic schedule on Sejong University's Academic Information System. This data includes classroom-specific information, detailing the classes held and their time slots.
