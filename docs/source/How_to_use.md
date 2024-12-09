@@ -1,6 +1,6 @@
 # How to use
 
-## **1) Project Download**
+## **1. Project Download**
 
 - **Clone the Project from GitHub**
   - Visit the [Sej-dule GitHub Repository](https://github.com/24-2-Sej-dule/Sej-dule).
@@ -14,7 +14,7 @@
   - Open the `index.html` file in your browser.
   - This allows you to use the Sej-dule application.
 
-## **2) Node.js and MongoDB Setup**
+## **2. Node.js and MongoDB Setup**
 
 - **Install Node.js**
   - Use the following commands to install Node.js:
@@ -31,7 +31,7 @@
   mongod --dbpath /path/to/your/database
   ```
 
-## **3) Environment Variable Setup**
+## **3. Environment Variable Setup**
 
 - **Create a `.env` File**
   - In the root directory of the project, create a `.env` file and add the following content:
@@ -39,7 +39,7 @@
   TOKEN_SECRET=Sej-dule-success
   ```
 
-## **4) Install Packages and Run**
+## **4. Install Packages and Run**
 
 - **Install npm Packages**
   - Install the required packages for the project:
@@ -52,7 +52,7 @@
   npm run start
   ```
 
-## **5) Access Path**
+## **5. Access Path**
 
 - To access the project running on the local server, open your browser and go to the following URL:
   ```arduino
@@ -61,7 +61,7 @@
 
 ---
 
-## 1) 프로젝트 다운로드
+## 1. 프로젝트 다운로드
 
 - GitHub에서 프로젝트 클론
   - [Sej-dule GitHub Repository](https://github.com/24-2-Sej-dule/Sej-dule)에 접속합니다.
@@ -75,7 +75,7 @@
   - `index.html` 파일을 브라우저에서 실행합니다.
   - 이를 통해 Sej-dule(셋둘)을 이용할 수 있습니다
 
-## 2) Node.js 및 MongoDB 환경 설정
+## 2. Node.js 및 MongoDB 환경 설정
 
 - node.js 설치
   - 아래 명령어를 사용하여 설치할 수 있습니다.
@@ -92,7 +92,7 @@
   mongod --dbpath /path/to/your/database
   ```
 
-## 3) 환경 변수 설정
+## 3. 환경 변수 설정
 
 - `.env` 파일 생성
   - 프로젝트 최상위 디렉토리에 `.env` 파일을 생성하고 아래 내용을 추가합니다.
@@ -101,7 +101,7 @@
 TOKEN_SECRET=Sej-dule-success
 ```
 
-## 4) 패키지 설치 및 진행
+## 4. 패키지 설치 및 진행
 
 - npm 패키지 설치
   - 프로젝트 실행에 필요한 패키지를 설치합니다.
@@ -114,7 +114,7 @@ TOKEN_SECRET=Sej-dule-success
   npm run start
   ```
 
-## 5) 접속 경로
+## 5. 접속 경로
 
 - 로컬 서버에서 실행된 프로젝트에 접속하려면 브라우저에서 다음 URL을 입력합니다.
   ```arduino
