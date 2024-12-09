@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/e7b8e66b-ed40-4b48-af45-a4412875267e)# Sej-dule (셋둘)
+# Sej-dule (셋둘)
 
 **Language**: [KOREAN](README_KOR.md)
 
@@ -65,19 +65,92 @@ Through this, classes can be opened at a certain time and when they are availabl
 
 ## 5. Development Tools
 
-- Programming Languages
+### **1) Frontend**
+- **Languages**:
     - HTML
     - CSS
     - JavaScript
+- **Libraries**:
+    - Chart.js
+    - FullCalendar.js
+
+### **2) Backend**
+- **Languages**:
     - Node.js
+- **Framework**:
     - Express
+- **Database**:
     - MongoDB
     - Mongoose
-- Library
-    - Chart.js
 
 ## 6. Role Distribution
 
 - Baek Sejin: Project Management and Data Processing
 - Seo Mikyung: Lead Front-end , Support UI/UX
 - Jang Seohyun: Lead UI/UX , Support Front-end
+
+## 7. How to Use
+
+### **1) Project Download**
+- **Clone the Project from GitHub**
+    - Visit the [Sej-dule GitHub Repository](https://github.com/24-2-Sej-dule/Sej-dule).
+    - Click **Code → Download ZIP** to download the ZIP file.
+    - Use the following commands to clone the project:
+    
+    ```bash
+    git clone https://github.com/24-2-Sej-dule/Sej-dule.git
+    cd Sej-dule
+    ```
+    
+- **Run the HTML File**
+    - Open the `index.html` file in your browser.
+    - This allows you to use the Sej-dule application.
+
+### **2) Node.js and MongoDB Setup**
+- **Install Node.js**
+    - Use the following commands to install Node.js:
+    
+    ```bash
+    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash 
+    export NVM_DIR="$HOME/.nvm"
+    [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+    nvm install --lts
+    ```
+    
+- **Install and Run MongoDB**
+    - Follow the [MongoDB Community Edition Installation Guide](https://www.mongodb.com/ko-kr/docs/manual/administration/install-community/) to install MongoDB.
+    - Use the following command to start the MongoDB server:
+    
+    ```bash
+    mongod --dbpath /path/to/your/database
+    ```
+    
+### **3) Environment Variable Setup**
+- **Create a `.env` File**
+    - In the root directory of the project, create a `.env` file and add the following content:
+    
+    ```bash
+    TOKEN_SECRET=Sej-dule-success
+    ```
+    
+### **4) Install Packages and Run**
+- **Install npm Packages**
+    - Install the required packages for the project:
+    
+    ```bash
+    npm i
+    ```
+    
+- **Start the Project**
+    - Use the following command to run the project:
+    
+    ```bash
+    npm run start
+    ```
+
+### **5) Access Path**
+- To access the project running on the local server, open your browser and go to the following URL:
+    
+    ```arduino
+    http://localhost:3333/1-index.html
+    ```
